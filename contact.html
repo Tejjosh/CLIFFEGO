@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Cliffego</title>
+<meta name="description" content="Tell us what you want to build. Start a project with Cliffego or email us directly." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+
+<nav class="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">CLIFFEGO</a>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="process.html">Process</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="is-active">Contact</a>
+    </div>
+    <div class="nav__right">
+      <a href="contact.html" class="btn btn-primary">Start a Project</a>
+      <button class="nav__menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu__links">
+    <a href="index.html">Home</a><a href="services.html">Services</a><a href="solutions.html">Solutions</a><a href="process.html">Process</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="btn btn-primary">Start a Project</a>
+</div>
+
+<main>
+  <header class="page-hero">
+    <div class="container">
+      <h1 class="h1">Tell us what<br />you want to build.</h1>
+    </div>
+  </header>
+
+  <section class="section section--white">
+    <div class="container contact-layout">
+      <form class="contact-form" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" required />
+            <span class="error">Please enter your name.</span>
+          </div>
+          <div class="field">
+            <label for="org">Business / Organization</label>
+            <input id="org" name="org" type="text" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required />
+            <span class="error">Please enter a valid email.</span>
+          </div>
+          <div class="field">
+            <label for="project-type">Project Type *</label>
+            <select id="project-type" name="projectType" required>
+              <option value="">Select one</option>
+              <option>Website Development</option>
+              <option>Web Applications</option>
+              <option>E-Commerce</option>
+              <option>API Development</option>
+              <option>Cloud &amp; Deployment</option>
+              <option>Maintenance &amp; Support</option>
+              <option>Not sure yet</option>
+            </select>
+            <span class="error">Please select a project type.</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="current-site">Current Website</label>
+          <input id="current-site" name="currentSite" type="url" placeholder="https://" />
+        </div>
+        <div class="field">
+          <label for="goal">What are you trying to achieve? *</label>
+          <textarea id="goal" name="goal" required></textarea>
+          <span class="error">Please describe your project.</span>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="budget">Budget Range</label>
+            <select id="budget" name="budget">
+              <option value="">Select a range</option>
+              <option>Under $5,000</option>
+              <option>$5,000 – $15,000</option>
+              <option>$15,000 – $50,000</option>
+              <option>$50,000+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="timeline">Timeline</label>
+            <select id="timeline" name="timeline">
+              <option value="">Select a timeline</option>
+              <option>As soon as possible</option>
+              <option>1–3 months</option>
+              <option>3–6 months</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Start the Conversation</button>
+        <p class="form-status" role="status"></p>
+      </form>
+
+      <aside class="contact-side">
+        <h3 class="h3">Prefer email?</h3>
+        <p class="muted" style="margin-top:0.5rem;">Reach out directly and we'll get back to you.</p>
+        <a href="mailto:hello@cliffego.com" class="btn btn-secondary" style="margin-top:1.5rem;">Email Cliffego</a>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand"><div class="nav__logo">CLIFFEGO</div><p class="footer__tagline">Build beyond.</p></div>
+    <div class="footer__col"><div class="footer__col-title">Site</div><ul>
+      <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="process.html">Process</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></div>
+    <div class="footer__col"><div class="footer__col-title">Services</div><ul>
+      <li><a href="services.html#website-development">Website Development</a></li><li><a href="services.html#web-applications">Web Applications</a></li><li><a href="services.html#e-commerce">E-Commerce</a></li><li><a href="services.html#api-development">API Development</a></li><li><a href="services.html#cloud-deployment">Cloud &amp; Deployment</a></li><li><a href="services.html#maintenance-support">Maintenance</a></li>
+    </ul></div>
+    <div class="footer__col"><div class="footer__col-title">Legal</div><ul>
+      <li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Cookies</a></li>
+    </ul></div>
+  </div>
+  <div class="footer__bottom"><span>© 2026 Cliffego</span><span>Build beyond.</span></div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
