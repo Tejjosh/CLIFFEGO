@@ -1,0 +1,73 @@
+/* ==========================================================================
+   CLIFFEGO DESIGN TOKENS
+   Mirrors the Figma "Cliffego Colors" and "Cliffego Spacing & Radius"
+   variable collections + the Cliffego/* text styles (00 — Foundations).
+   ========================================================================== */
+
+:root {
+  /* Color */
+  --color-copper: #A05232;
+  --color-dark-copper: #7E3F28;
+  --color-silver: #A8AAAD;
+  --color-charcoal: #181818;
+  --color-deep-slate: #25292D;
+  --color-off-white: #F7F6F3;
+  --color-white: #FFFFFF;
+
+  /* Semantic color roles */
+  --surface-dark: var(--color-charcoal);
+  --surface-dark-raised: var(--color-deep-slate);
+  --surface-light: var(--color-off-white);
+  --surface-white: var(--color-white);
+  --text-on-dark: var(--color-off-white);
+  --text-on-dark-muted: var(--color-silver);
+  --text-on-light: var(--color-charcoal);
+  --text-on-light-muted: #5B5D60;
+  --accent: var(--color-copper);
+  --accent-deep: var(--color-dark-copper);
+  --border-on-dark: rgba(247, 246, 243, 0.14);
+  --border-on-light: rgba(24, 24, 24, 0.12);
+
+  /* Typography */
+  --font-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --text-display: 700 clamp(2.75rem, 2.1rem + 3vw, 4.75rem)/1.05 var(--font-base);
+  --text-h1: 700 clamp(2.25rem, 1.9rem + 1.6vw, 3.25rem)/1.1 var(--font-base);
+  --text-h2: 700 clamp(1.75rem, 1.55rem + 0.9vw, 2.375rem)/1.18 var(--font-base);
+  --text-h3: 600 clamp(1.25rem, 1.15rem + 0.4vw, 1.5rem)/1.28 var(--font-base);
+  --text-body: 400 1rem/1.6 var(--font-base);
+  --text-small: 400 0.8125rem/1.5 var(--font-base);
+  --text-label: 600 0.6875rem/1.3 var(--font-base);
+  --text-label-tracking: 0.08em;
+
+  /* Spacing */
+  --spacing-section: 7rem;
+  --spacing-section-mobile: 4rem;
+  --spacing-container: 4rem;
+  --spacing-container-mobile: 1.5rem;
+  --spacing-card: 1.5rem;
+  --spacing-button: 1rem;
+
+  /* Radius */
+  --radius-button: 6px;
+  --radius-card: 8px;
+  --radius-input: 4px;
+
+  /* Layout */
+  --content-max: 1280px;
+  --border-hairline: 1px solid var(--border-on-light);
+  --border-hairline-dark: 1px solid var(--border-on-dark);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 600ms;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --spacing-section: var(--spacing-section-mobile);
+    --spacing-container: var(--spacing-container-mobile);
+  }
+}
